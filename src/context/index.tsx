@@ -31,7 +31,7 @@ const initialState = {
 
 export const GlobalContext = createContext<ContextType>(initialState)
 
-export default function GlobalState({ children }: { children: ReactNode }) {
+export default function GlobalState({ children }: { children: ReactNode }): void | JSX.Element {
     const [loading, setLoading] = useState(false);
     const [formData, setFormData] = useState(initialBlogFormData);
     const [searchQuery, setSearchQuery] = useState('');
