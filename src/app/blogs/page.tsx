@@ -3,7 +3,7 @@ import BlogList from "../components/blogs/blog-list";
 async function extractAllBlogs() {
     const res = 
     
-    await fetch(`${process.env.URL}/api/blog-post/get-all-posts`, {
+    await fetch(`${process.env.PORT}/api/blog-post/get-all-posts`, {
         method: 'GET',
         cache: 'no-store'
     })
